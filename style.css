@@ -1,33 +1,31 @@
 body {
-    background-color: black;
-
-        font-family: 'Roboto', sans-serif;    
-}
-
-.right-menu {
-    position: absolute; /
-    top: 20px; 
-    right: 20px; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900; 
+  }
+  
+  .right-menu {
+    position: absolute;
+    top: 24px;
+    right: 39px;
+    padding-right: 109px; 
 }
 
 .sign-in-button {
     display: inline-block;
-    background-color: red; 
-    color: white; 
-    padding: 10px 20px; 
-    text-decoration: none; 
-    border-radius: 5px; 
-    font-size: 16px; 
-    font-weight: bold; 
-    transition: background-color 0.3s ease; 
+    background-color: rgb(224, 18, 18);
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
     margin: 0%;
 }
-
 
 .sign-in-button:hover {
     background-color: #e50914; 
 }
-
 
 .navbar{
     height: 95px;
@@ -41,23 +39,30 @@ body {
     font-size: 16px;
     text-decoration: none;
 }
-/* 
-FONTS */
-.card-title{
-    font-size: 66px;
-    margin-bottom: 0.5 rem;
-    line-height: 1.1;
-    font-weight: 600;
+
+.card-title {
+    font-size: 60px;
+    margin-bottom: 38px;
+    font-weight: 900;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    padding-left: 30px;
+    
 }
+
+
 .card-subtitle{
-    font-size: 28px;
-    font-weight: 400;
-    margin: 1rem 0;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: -30px;
+    padding-bottom: 38px;
+    padding-left: 58px;
 }
 .email-form-title{
-    font-size:22px;
-    font-weight: 400;
-    padding-bottom: 20px;
+    font-size:15px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    padding-left: 52px;
 }
 
 .banner-wrap {
@@ -92,12 +97,13 @@ h1: ::before{
     align-items: center;
     justify-content: space-between;
     height: 45px;
-   margin: 0 45px;
- padding-top: 45px;
+    margin: 0 45px;
+    padding-top: 45px;
 }
 
 .navbar > svg {
-    height: 45px;
+    height: 40px;
+    padding-left: 102px;
 }
 
 .banner-container {
@@ -106,26 +112,62 @@ h1: ::before{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90%;
+    height: 88%;
+    font-weight: 900;
+    font-weight: bold;
+}
+.tv{
+    font-size: 60px;
+    padding-left: 60px;
+}
+.more{
+    font-size: 60px;
+    padding-left: 119px;
 }
 .get-started-form{
     height: 60px;
     display: flex;
+    gap: 10px;
+    padding-left: 55px;
+    margin-bottom: -80px;
+    margin-left: -10px;
 }
-.get-started-form input{
+.get-started-form input {
     height: 100%;
-    width: 450px;
+    width: 390px;
     padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.586); 
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    color: white; 
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none; 
+}
+
+.get-started-form input:focus {
+    outline: none; 
+    box-shadow: none; 
+    border-color: white; 
+}
+
+.get-started-form input::placeholder {
+    color: rgba(255, 255, 255, 0.5); 
 }
 .get-started-form button{
     background-color: red;
     color: white;
     height: 100%;
-    font-size: 1.625rem;
-    border: none;
+    font-size: 22px;
     min-height: 60px;
-    padding: 0 26px;
+    padding-left: 10px;
     border-left: 1px solid;
+    width: 210px;
+    border: none 
+    color: white;
+    border-radius: 5px; 
+    outline: none; 
+    box-shadow: none;
 }
 .info-container{
     background: black;
@@ -153,55 +195,82 @@ h1: ::before{
 .tv-container video{
     position: absolute;
 }
-
-.footer-top{
-    margin-bottom: 30px;
-}
- .footer-items{
+.footer {
+    background-color: black; 
+    color: white;
     padding: 70px 45px;
-    margin:0 47.5px ;
+}
+
+.footer-items {
+    padding: 70px 45px;
+    margin: 0 47.5px;
     font-size: 30px;
-} 
-.footer ul li, .questions-title{
+}
+
+.footer ul li,
+.questions-title {
     color: gray;
 }
-.footer-links li{
+
+.footer-links li {
     font-size: 13px;
     line-height: 2;
 }
-.footer ul li:hover{
+
+.footer ul li:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-.questions-title:hover{
+.questions-title:hover {
     text-decoration: underline;
-    cursor: pointer
+    cursor: pointer;
 }
 
-.footer-links{
+.footer-links {
     list-style-type: none;
     columns: 4;
     padding: 0;
 }
 
 .language {
-    height: 53px;
-    width: 142px;
-    color: #999999;
+    height: 40px; 
+    width: 160px; 
+    color: #fff; 
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    border: 1px solid #999999;
-    padding: 0 10px;
+    justify-content: space-between;
+    border: 1px solid #ccc; 
+    padding: 0 9px;
     margin-top: 30px;
+    border-radius: 5px; 
+    background-color: #333; 
+    gap: 10px; 
 }
 
 .language select {
-    margin-left: 10px;
-    border: none;
-    appearance: none;
-    background: black;
-    color: #999999;
+    background-color: transparent; 
+    color: white; 
+    border: none; 
+    font-size: 14px;
+    appearance: none; 
+    width: 100%; 
+    padding: 5px 0; 
+    cursor: pointer; 
+}
+
+.language select:focus {
+    outline: none; 
+    border: none; 
+}
+
+.language select option {
+    background-color: #333; 
+    color: white; 
+    padding: 10px; 
+}
+
+.language select option:hover {
+    background-color: #555; 
 }
 
